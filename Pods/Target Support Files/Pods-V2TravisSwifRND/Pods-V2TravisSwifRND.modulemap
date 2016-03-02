@@ -1,0 +1,6 @@
+framework module Pods_V2TravisSwifRND {
+  umbrella header "Pods-V2TravisSwifRND-umbrella.h"
+
+  export *
+  module * { export * }
+}
