@@ -29,5 +29,12 @@ security import "$APP_SCRIPT_PATH$APP_TEAM_DISTRIBUTION_PRIVATE_KEYS" -k ~/Libra
 
 
 # Put the provisioning profile in place
+echo “APP Path - 1”
+echo $APP_PROFILE_PATH
+
+echo “APP Path - 2”
+
+echo $PROFILE_NAME
+
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
 cp "$APP_PROFILE_PATH$PROFILE_NAME.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
