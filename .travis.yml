@@ -4,11 +4,11 @@ branches:
 only:
 - master
 
-xcode_project: V2TravisSwifRND.xcworkspace
+xcode_project: V2TravisSwifRND.xcodeproj
 #xcode_scheme: V2TravisSwifRNDTests
 osx_image: beta-xcode6.3
 xcode_sdk: iphonesimulator8.3
 
 script:
 #- xctool -workspace V2TravisSwifRND.xcworkspace -scheme V2TravisSwifRND.Debug -sdk iphoneos -configuration OBJROOT="$PWD/build" SYMROOT="$PWD/build" ONLY_ACTIVE_ARCH=NO
-- xcodebuild -project V2TravisSwifRND.xcodeproj -scheme V2TravisSwifRND
+- xcodebuild -project V2TravisSwifRND.xcodeproj -scheme test
