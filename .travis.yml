@@ -12,6 +12,6 @@ xcode_sdk: iphonesimulator8.3
 script:
 #- xcodebuild test -project V2TravisSwifRND.xcodeproj -scheme SwifternalizationTests
 
-- xctool -workspace V2TravisSwifRND.xcworkspace -scheme V2TravisSwifRND -sdk iphoneos -configuration OBJROOT="$PWD/build" SYMROOT="$PWD/build" ONLY_ACTIVE_ARCH=NO
+- xctool -workspace V2TravisSwifRND.xcworkspace -sdk iphoneos -configuration OBJROOT="$PWD/build" SYMROOT="$PWD/build" ONLY_ACTIVE_ARCH=NO
 
 #./V2TravisSwifRND.xcworkspace
