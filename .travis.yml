@@ -10,6 +10,5 @@ osx_image: beta-xcode6.3
 xcode_sdk: iphonesimulator8.3
 
 script:
-- xctool -workspace V2TravisSwifRND.xcworkspace -scheme V2TravisSwifRND.Debug -sdk iphoneos -configuration OBJROOT="$PWD/build" SYMROOT="$PWD/build" ONLY_ACTIVE_ARCH=NO
-
-#./V2TravisSwifRND.xcworkspace
+#- xctool -workspace V2TravisSwifRND.xcworkspace -scheme V2TravisSwifRND.Debug -sdk iphoneos -configuration OBJROOT="$PWD/build" SYMROOT="$PWD/build" ONLY_ACTIVE_ARCH=NO
+- xcodebuild test -project V2TravisSwifRND.xcodeproj -scheme V2TravisSwifRNDTests
