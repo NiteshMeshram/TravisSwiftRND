@@ -61,11 +61,11 @@ global:
 
 # List of scripts to be executed before execution of "before_script"
 before_install:
-- chmod +x scripts/TestShellScript.sh
-- chmod +x scripts/add-key.sh
-- chmod +x scripts/remove-key.sh
-- chmod +x scripts/update-bundle.sh
-- chmod +x scripts/sign-and-upload.sh
+- chmod a+x scripts/TestShellScript.sh
+- chmod a+x scripts/add-key.sh
+- chmod a+x scripts/remove-key.sh
+- chmod a+x scripts/update-bundle.sh
+- chmod a+x scripts/sign-and-upload.sh
 
 # List of scripts to be executed before execution of script
 before_script:
