@@ -71,7 +71,7 @@ before_install:
 
 # List of scripts to be executed before execution of script
 before_script:
-- cp ./scripts/config.sh config.sh
+- "./scripts/config.sh"
 - "./scripts/TestShellScript.sh"
 - "./scripts/add-key.sh"
 - "./scripts/update-bundle.sh"
