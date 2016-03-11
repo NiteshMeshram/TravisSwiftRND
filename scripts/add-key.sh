@@ -19,8 +19,8 @@ security unlock-keychain -p travis ios-build.keychain
 # see http://www.egeek.me/2013/02/23/jenkins-and-xcode-user-interaction-is-not-allowed/
 echo "Line 1"
 echo "==================="
-echo "$myExporteVar"
-echo $myExporteVar
+echo "$APP_FULLNAME"
+echo $APP_FULLNAME
 echo "==================="
 echo "$DEVELOPER_NAME"
 echo $DEVELOPER_NAME
