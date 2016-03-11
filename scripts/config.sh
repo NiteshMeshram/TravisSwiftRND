@@ -8,9 +8,9 @@ export PROFILE_NAME="Distribution"
 #APP_PROFILE_PATH : GITHUB repository relative path for the provisioning profile.
 #                   Standard file already available in respective folder.
 #                   DO not change until scripts or profile folder name changed.
-export APP_PROFILE_PATH="./scripts/profile/"
+export APP_PROFILE_PATH="$PWD/scripts/profile/"
 #APP_SCRIPT_PATH : Shell script path which is referred internally. Do not change until scripts folder name changed.
-export APP_SCRIPT_PATH="./scripts/certs/"
+export APP_SCRIPT_PATH="$PWD/scripts/certs/"
 #APP_APPLE_CERTIFICATE : Apple standard certificate. Do not changed until required.
 export APP_APPLE_CERTIFICATE="apple.cer"
 #APP_TEAM_AGENT_DISTRIBUTION_CERTIFICATE : Certificated generated from Apple portal.
@@ -21,12 +21,12 @@ export APP_TEAM_DISTRIBUTION_PRIVATE_KEYS="Key.p12"
 #APP_NAME : Name of the .app and .ipa file
 export APP_NAME="LendingTree"
 #APP_WORKSPACE_PATH : Relative path of the .xcworkspace file
-- APP_WORKSPACE_PATH="./V2TravisSwifRND.xcworkspace"
+- APP_WORKSPACE_PATH="$PWD/V2TravisSwifRND.xcworkspace"
 #APP_SCHEME : Name of the xCode scheme. It is assume that all the scheme has the same name.
 #             It is automatically suffixed by scheme (DEV/QA/UAT)
 export APP_SCHEME="Money Center"
 #Settings For Getting Pivotal Notes : Settings For Getting Pivotal Notes
-export INFOPLIST_FILE="./V2TravisSwifRND/Info.plist"
+export INFOPLIST_FILE="$PWD/V2TravisSwifRND/Info.plist"
 #- PIVOTAL_PROJECT_ID=1114232
 #- PIVOTAL_TOKEN='763aa9881c2d64966f6c17be60926221'
 export OUTPUT_FILE_NAME='jsonresponse.text'
