@@ -1,2 +1,2 @@
 #!/bin/sh
-export myExporteVar=TravisExample
+export APP_FULLNAME=SwiftAPP
