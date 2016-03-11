@@ -21,7 +21,7 @@ export APP_TEAM_DISTRIBUTION_PRIVATE_KEYS="Key.p12"
 #APP_NAME : Name of the .app and .ipa file
 export APP_NAME="LendingTree"
 #APP_WORKSPACE_PATH : Relative path of the .xcworkspace file
-- APP_WORKSPACE_PATH="$PWD/V2TravisSwifRND.xcworkspace"
+export APP_WORKSPACE_PATH="$PWD/V2TravisSwifRND.xcworkspace"
 #APP_SCHEME : Name of the xCode scheme. It is assume that all the scheme has the same name.
 #             It is automatically suffixed by scheme (DEV/QA/UAT)
 export APP_SCHEME="Money Center"
