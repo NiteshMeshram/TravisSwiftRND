@@ -18,6 +18,8 @@ security unlock-keychain -p travis ios-build.keychain
 # Set keychain timeout to 1 hour for long builds
 # see http://www.egeek.me/2013/02/23/jenkins-and-xcode-user-interaction-is-not-allowed/
 echo "Line 1"
+echo "$DEVELOPER_NAME"
+echo $DEVELOPER_NAME
 echo "$PWD$APP_SCRIPT_PATH$APP_APPLE_CERTIFICATE"
 security set-keychain-settings -t 3600 -l ~/Library/Keychains/ios-build.keychain
 

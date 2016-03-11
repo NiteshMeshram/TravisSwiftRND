@@ -24,9 +24,9 @@ on_success: always
 on_failure: always
 
 env:
-global:
+  global:
 #DEVELOPER_NAME : must have the name appeared on the certificate used. Generally this should not be changed.
-- 'DEVELOPER_NAME="iPhone Distribution: V2Solutions, Inc."'
+    - 'DEVELOPER_NAME="iPhone Distribution: V2Solutions, Inc."'
 #PROFILE_NAME : Certificate profile name. Generally this should not be changed
 - PROFILE_NAME="Distribution"
 #APP_PROFILE_PATH : GITHUB repository relative path for the provisioning profile.

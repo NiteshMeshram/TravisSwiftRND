@@ -1,1 +1,1 @@
-echo "Nitesh Meshram"
+export fName="HELLO, VARIABLE"
