@@ -24,14 +24,14 @@ security set-keychain-settings -t 3600 -l ~/Library/Keychains/ios-build.keychain
 
 
 # Add certificates to keychain and allow codesign to access them
-security import "$PWD$APP_SCRIPT_PATH$APP_APPLE_CERTIFICATE" -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
-security import "$PWD$APP_SCRIPT_PATH$APP_TEAM_AGENT_DISTRIBUTION_CERTIFICATE" -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
-security import "$PWD$APP_SCRIPT_PATH$APP_TEAM_DISTRIBUTION_PRIVATE_KEYS" -k ~/Library/Keychains/ios-build.keychain -P '' -T /usr/bin/codesign
+#security import "$PWD$APP_SCRIPT_PATH$APP_APPLE_CERTIFICATE" -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
+#security import "$PWD$APP_SCRIPT_PATH$APP_TEAM_AGENT_DISTRIBUTION_CERTIFICATE" -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
+#security import "$PWD$APP_SCRIPT_PATH$APP_TEAM_DISTRIBUTION_PRIVATE_KEYS" -k ~/Library/Keychains/ios-build.keychain -P '' -T /usr/bin/codesign
 
 echo "Line 2"
-#security import $PWD/scripts/certs/apple.cer -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
-#security import "$APP_SCRIPT_PATH$APP_TEAM_AGENT_DISTRIBUTION_CERTIFICATE" -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
-#security import "$APP_SCRIPT_PATH$APP_TEAM_DISTRIBUTION_PRIVATE_KEYS" -k ~/Library/Keychains/ios-build.keychain -P '' -T /usr/bin/codesign
+security import $PWD/scripts/certs/apple.cer -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
+security import $PWD/scripts/certs/Certificates.cer -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
+security import $PWD/scripts/certs/Key.p12 -k ~/Library/Keychains/ios-build.keychain -P '' -T /usr/bin/codesign
 
 
 #security import ./scripts/certs/Key.p12 -k ~/Library/Keychains/ios-build.keychain -P $KEY_PASSWORD -T /usr/bin/codesign
