@@ -71,14 +71,14 @@ before_install:
 
 # List of scripts to be executed before execution of script
 before_script:
-- "./scripts/config.sh"
-- "./scripts/TestShellScript.sh"
-- "./scripts/add-key.sh"
-- "./scripts/update-bundle.sh"
+- ". ./scripts/config.sh"
+- ". ./scripts/TestShellScript.sh"
+- ". ./scripts/add-key.sh"
+- ". ./scripts/update-bundle.sh"
 
 #Command to be executed in "script".
 script:
-- "./scripts/TestShellScript.sh"
+- ". ./scripts/TestShellScript.sh"
 #Default Value for APP_BUILD_ENV
 - APP_BUILD_ENV=DEV
 
