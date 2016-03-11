@@ -23,6 +23,7 @@ recipients:
 on_success: always
 on_failure: always
 
+
 env:
   global:
 #DEVELOPER_NAME : must have the name appeared on the certificate used. Generally this should not be changed.
@@ -61,6 +62,7 @@ env:
 
 # List of scripts to be executed before execution of "before_script"
 before_install:
+- chmod a+x scripts/config.sh
 - chmod a+x scripts/TestShellScript.sh
 - chmod a+x scripts/add-key.sh
 - chmod a+x scripts/remove-key.sh

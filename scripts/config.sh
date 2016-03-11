@@ -1,0 +1,1 @@
+export myExporteVar=TravisExample

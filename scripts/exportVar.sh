@@ -1,2 +1,0 @@
-./TestShellScript.bash
-echo "$fName"
