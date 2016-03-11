@@ -42,4 +42,4 @@ security import $PWD/scripts/certs/Key.p12 -k ~/Library/Keychains/ios-build.keyc
 echo "Line 3"
 
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-cp "$APP_PROFILE_PATH$PROFILE_NAME.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
+cp $PWD/scripts/profile/Distribution.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
