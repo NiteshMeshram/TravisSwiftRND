@@ -43,8 +43,7 @@ before_script:
 #Command to be executed in "script".
 script:
 - ". ./scripts/TestShellScript.sh"
-#Default Value for APP_BUILD_ENV
-- APP_BUILD_ENV=DEV
+
 
 #Condition which defines the Build env used in the xctool based on the branch
 #For Branch : develop --> DEV scheme used

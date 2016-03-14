@@ -7,15 +7,6 @@
 # http://www.objc.io/issue-6/travis-ci.html
 
 
-# APP_BUILD_ENV : To configure the build scheme environment for defining the app build path
-APP_BUILD_ENV=""
-
-# HOCKEY_APP_ID & HOCKEY_APP_TOKEN : To configure the Hockey App Id and Token for uploading the build
-HOCKEY_APP_TOKEN=""
-HOCKEY_APP_ID=""
-export OUTPUT_FILE_NAME= 'TestReleaseNotes' #'./release_notes/V2 - LT - MyLendingTree - iOS-'
-export LABEL_ID=''
-export ALL_STORIES_WITH_ID=''
 
 # Condition which defines the Build Env used and based on that selection of the Hockey App Id and Hockey App token
 if ([ "$TRAVIS_BRANCH"  = "master" ]); then

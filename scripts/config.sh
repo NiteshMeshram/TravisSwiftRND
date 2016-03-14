@@ -30,6 +30,17 @@ export INFOPLIST_FILE="$PWD/V2TravisSwifRND/Info.plist"
 #- PIVOTAL_PROJECT_ID=1114232
 #- PIVOTAL_TOKEN='763aa9881c2d64966f6c17be60926221'
 export OUTPUT_FILE_NAME='jsonresponse.text'
-#DEV_HOCKEY_APP_ID : HOCKEY APP ID and Token for DEV scheme
+
+# HOCKEY_APP_ID & HOCKEY_APP_TOKEN : To configure the Hockey App Id and Token for uploading the build
 export DEV_HOCKEY_APP_ID="8b8b2bcd857148ddaa5d6428c5212874"
 export DEV_HOCKEY_APP_TOKEN="9a172758bdfe4fe4b10299bfc9ea519a"
+
+
+export LABEL_ID=''
+export ALL_STORIES_WITH_ID=''
+export OUTPUT_FILE_NAME= 'TestReleaseNotes' #'./release_notes/V2 - LT - MyLendingTree - iOS-'
+
+
+# APP_BUILD_ENV : To configure the build scheme environment for defining the app build path
+export APP_BUILD_ENV=DEV #Default Value for APP_BUILD_ENV
+
