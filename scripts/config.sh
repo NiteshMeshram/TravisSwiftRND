@@ -24,7 +24,7 @@ export APP_NAME="LendingTree"
 export APP_WORKSPACE_PATH="$PWD/V2TravisSwifRND.xcworkspace"
 #APP_SCHEME : Name of the xCode scheme. It is assume that all the scheme has the same name.
 #             It is automatically suffixed by scheme (DEV/QA/UAT)
-export APP_SCHEME="Money Center"
+export APP_SCHEME="V2TravisSwifRND"
 #Settings For Getting Pivotal Notes : Settings For Getting Pivotal Notes
 export INFOPLIST_FILE="$PWD/V2TravisSwifRND/Info.plist"
 #- PIVOTAL_PROJECT_ID=1114232
