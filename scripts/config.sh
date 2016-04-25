@@ -1,23 +1,13 @@
 #!/bin/sh
 export APP_FULLNAME=SwiftAPP
 
-#DEVELOPER_NAME : must have the name appeared on the certificate used. Generally this should not be changed.
-export DEVELOPER_NAME="iPhone Distribution: V2Solutions, Inc."
-#PROFILE_NAME : Certificate profile name. Generally this should not be changed
-export PROFILE_NAME="Distribution"
 #APP_PROFILE_PATH : GITHUB repository relative path for the provisioning profile.
 #                   Standard file already available in respective folder.
 #                   DO not change until scripts or profile folder name changed.
 export APP_PROFILE_PATH="$PWD/scripts/profile/"
 #APP_SCRIPT_PATH : Shell script path which is referred internally. Do not change until scripts folder name changed.
 export APP_SCRIPT_PATH="$PWD/scripts/certs/"
-#APP_APPLE_CERTIFICATE : Apple standard certificate. Do not changed until required.
-export APP_APPLE_CERTIFICATE="apple.cer"
-#APP_TEAM_AGENT_DISTRIBUTION_CERTIFICATE : Certificated generated from Apple portal.
-#                                          Do not change until certificate is expired / regenerated
-export APP_TEAM_AGENT_DISTRIBUTION_CERTIFICATE="Certificates.cer"
-#APP_TEAM_DISTRIBUTION_PRIVATE_KEYS :  Private key generated using key chain. Do not change until regenerated.
-export APP_TEAM_DISTRIBUTION_PRIVATE_KEYS="Key.p12"
+
 #APP_NAME : Name of the .app and .ipa file
 export APP_NAME="V2TravisSwifRND"
 #APP_WORKSPACE_PATH : Relative path of the .xcworkspace file
@@ -43,4 +33,27 @@ export OUTPUT_FILE_NAME= 'TestReleaseNotes' #'./release_notes/V2 - LT - MyLendin
 
 # APP_BUILD_ENV : To configure the build scheme environment for defining the app build path
 export APP_BUILD_ENV=DEV #Default Value for APP_BUILD_ENV
+
+
+
+
+
+#*****************************Swift Certificates**********************
+
+#DEVELOPER_NAME : must have the name appeared on the certificate used. Generally this should not be changed.
+export DEVELOPER_NAME="iPhone Distribution: V2Solutions, Inc."
+
+#APP_APPLE_CERTIFICATE : Apple standard certificate. Do not changed until required.
+export APP_APPLE_CERTIFICATE="apple.cer"
+
+#APP_TEAM_AGENT_DISTRIBUTION_CERTIFICATE : Certificated generated from Apple portal.
+#                                          Do not change until certificate is expired / regenerated
+export APP_TEAM_AGENT_DISTRIBUTION_CERTIFICATE="Certificates_Swift.cer"
+#APP_TEAM_DISTRIBUTION_PRIVATE_KEYS :  Private key generated using key chain. Do not change until regenerated.
+export APP_TEAM_DISTRIBUTION_PRIVATE_KEYS="Key_Swift.p12"
+
+#3. PROFILE_NAME : Certificate profile name. Generally this should not be changed
+export PROFILE_NAME="Distribution_Swift"
+
+#*****************************Swift Certificates**********************
 
