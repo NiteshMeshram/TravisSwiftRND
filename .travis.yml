@@ -66,7 +66,7 @@ script:
 
 #- xctool -workspace "$APP_WORKSPACE_PATH" -scheme "$APP_SCHEME" -sdk iphoneos -configuration "$APP_BUILD_ENV" OBJROOT="$PWD/build" SYMROOT="$PWD/build" ONLY_ACTIVE_ARCH=NO
 
-- /usr/bin/xcodebuild -workspace $APP_WORKSPACE_PATH -scheme $APP_SCHEME
+#- /usr/bin/xcodebuild -workspace $APP_WORKSPACE_PATH -scheme $APP_SCHEME
 
 #command to run unit test for specific scheme
 #- xctool test -workspace "$APP_WORKSPACE_PATH" -scheme "$APP_SCHEME.$APP_BUILD_ENV" -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
