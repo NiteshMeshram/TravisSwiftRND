@@ -9,26 +9,26 @@
 
 
 # Condition which defines the Build Env used and based on that selection of the Hockey App Id and Hockey App token
-if ([ "$TRAVIS_BRANCH"  = "master" ]); then
-#if ([ "$TRAVIS_BRANCH"  = "99796590-Setup_Email_Notification_for__" ]); then
-    APP_BUILD_ENV=DEV;
-    HOCKEY_APP_ID=$DEV_HOCKEY_APP_ID;
-    HOCKEY_APP_TOKEN=$DEV_HOCKEY_APP_TOKEN;
-    echo "DEV Scheme Selected.";
-elif ([ "$TRAVIS_BRANCH" = "QA" ]); then
-    APP_BUILD_ENV=QA;
-    HOCKEY_APP_ID=$QA_HOCKEY_APP_ID;
-    HOCKEY_APP_TOKEN=$QA_HOCKEY_APP_TOKEN;
-    echo "QA Scheme Selected.";
-elif ([ "$TRAVIS_BRANCH" = "master" ]); then
-    APP_BUILD_ENV=UAT;
-    HOCKEY_APP_ID=$UAT_HOCKEY_APP_ID;
-    HOCKEY_APP_TOKEN=$UAT_HOCKEY_APP_TOKEN;
-    echo "UAT Scheme Selected.";
-else
-    echo "No deployment will be done."
-    exit 0
-fi
+#if ([ "$TRAVIS_BRANCH"  = "master" ]); then
+##if ([ "$TRAVIS_BRANCH"  = "99796590-Setup_Email_Notification_for__" ]); then
+#    APP_BUILD_ENV=DEV;
+#    HOCKEY_APP_ID=$DEV_HOCKEY_APP_ID;
+#    HOCKEY_APP_TOKEN=$DEV_HOCKEY_APP_TOKEN;
+#    echo "DEV Scheme Selected.";
+#elif ([ "$TRAVIS_BRANCH" = "QA" ]); then
+#    APP_BUILD_ENV=QA;
+#    HOCKEY_APP_ID=$QA_HOCKEY_APP_ID;
+#    HOCKEY_APP_TOKEN=$QA_HOCKEY_APP_TOKEN;
+#    echo "QA Scheme Selected.";
+#elif ([ "$TRAVIS_BRANCH" = "master" ]); then
+#    APP_BUILD_ENV=UAT;
+#    HOCKEY_APP_ID=$UAT_HOCKEY_APP_ID;
+#    HOCKEY_APP_TOKEN=$UAT_HOCKEY_APP_TOKEN;
+#    echo "UAT Scheme Selected.";
+#else
+#    echo "No deployment will be done."
+#    exit 0
+#fi
 
 # PROVISIONING_PROFILE : Provition profile selction
 PROVISIONING_PROFILE="$HOME/Library/MobileDevice/Provisioning Profiles/$PROFILE_NAME.mobileprovision"
