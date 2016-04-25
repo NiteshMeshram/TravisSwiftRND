@@ -19,7 +19,7 @@ export APP_TEAM_AGENT_DISTRIBUTION_CERTIFICATE="Certificates.cer"
 #APP_TEAM_DISTRIBUTION_PRIVATE_KEYS :  Private key generated using key chain. Do not change until regenerated.
 export APP_TEAM_DISTRIBUTION_PRIVATE_KEYS="Key.p12"
 #APP_NAME : Name of the .app and .ipa file
-export APP_NAME="LendingTree"
+export APP_NAME="V2TravisSwifRND"
 #APP_WORKSPACE_PATH : Relative path of the .xcworkspace file
 export APP_WORKSPACE_PATH="$PWD/V2TravisSwifRND.xcworkspace"
 #APP_SCHEME : Name of the xCode scheme. It is assume that all the scheme has the same name.
